@@ -5,6 +5,19 @@ Ginti is a GenAI-powered citizen companion for India's upcoming digital Census 2
 
 ---
 
+## 🔒 Security & Responsible AI Framework
+
+Ginti implements a defense-in-depth security and safety architecture:
+
+1. **Active Input Sanitization & Length Guardrails**: Prevents memory bloat, token exhaustion attacks, and XSS.
+2. **PII Auto-Shielding**: Regular expression interceptors automatically detect and block accidental submissions of real national identity numbers (Aadhaar, PAN, banking card numbers) before any data touches LLMs.
+3. **Prompt Injection & Jailbreak Defense**: Real-time pattern detection blocks system overrides, developer-mode manipulation, and extraction attempts.
+4. **Strict System Prompt Boundaries**: Dedicated guardrails prohibiting official impersonation, hallucination of non-existent dates, or answering non-census topics.
+5. **Output HTML & Script Stripping**: Sanitizes all model outputs to prevent stored/reflected script execution.
+6. **Transparent AI Attribution**: Distinct visual badges and disclaimers clearly distinguish verified official processes from probabilistic AI explanations.
+
+---
+
 ## 🌟 Key Features
 
 1. **Phase 1 & Phase 2 Breakdown**: Detailed explanations of what data is collected in Houselisting & Housing Census vs. Population Enumeration.
@@ -21,7 +34,7 @@ Ginti is a GenAI-powered citizen companion for India's upcoming digital Census 2
 
 - **Frontend**: React 19, Vite, React Router 7
 - **Styling**: Vanilla CSS Design System with responsive layouts & semantic tokens
-- **GenAI**: Google Gemini API via `@google/genai` with automatic multi-model fallback cascade (`gemini-2.0-flash`, `gemini-1.5-flash`, `gemini-1.5-flash-8b`)
+- **GenAI**: Google Gemini API via `@google/genai` with multi-model fallback cascade (`gemini-2.0-flash`, `gemini-1.5-flash`, `gemini-1.5-flash-8b`)
 - **Charts**: Chart.js & React-Chartjs-2
 
 ---
@@ -55,4 +68,3 @@ npm run build
 
 ## ⚖️ Disclaimer
 *Ginti is an educational prototype built for hackathon demonstration. It is not an official Government of India portal. Official census dates and details will be published at [censusindia.gov.in](https://censusindia.gov.in).*
-# census
