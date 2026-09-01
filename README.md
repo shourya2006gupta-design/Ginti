@@ -55,3 +55,4 @@ npm run build
 
 ## ⚖️ Disclaimer
 *Ginti is an educational prototype built for hackathon demonstration. It is not an official Government of India portal. Official census dates and details will be published at [censusindia.gov.in](https://censusindia.gov.in).*
+# census
