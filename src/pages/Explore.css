@@ -1,0 +1,75 @@
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-xl);
+  margin-bottom: var(--space-3xl);
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-xl);
+  margin-bottom: var(--space-3xl);
+}
+
+.chart-card {
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chart-card__question {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-lg);
+  line-height: var(--line-height-tight);
+}
+
+.chart-card__viz {
+  margin-bottom: var(--space-xl);
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-card__explanation {
+  background: var(--color-bg-subtle);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+  line-height: var(--line-height-relaxed);
+}
+
+.chart-card__explanation strong {
+  color: var(--color-primary);
+}
+
+.chart-card__why-it-matters {
+  border-top: 1px dashed var(--color-border-light);
+  padding-top: var(--space-md);
+}
+
+.chart-card__why-title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xs);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.chart-card__why-it-matters p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-relaxed);
+}
